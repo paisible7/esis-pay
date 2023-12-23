@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESIS-Pay</title>
+    <link rel="stylesheet" href="css/font awesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/udbllogo.png" type="image/png">
+</head>
+
+<body>
+    <div class="conteneur">
+        <div class="content">
+            <div class="container cont0">
+                <div class="title">
+                    <h4>Selectionner un mode de <span style="color: red;">Paiement</span></h4>
+                </div>
+                <form action="">
+                    <input type="radio" name="paie" id="equity">
+                    <input type="radio" name="paie" id="uba">
+                    <input type="radio" name="paie" id="ecobank">
+                    <input type="radio" name="paie" id="rawbank">
+
+                    <div class="categorie">
+                        <label for="equity" class="equme">
+                            <div class="imgNom">
+                                <div class="imgContaineur">
+                                    <img src="image/equity.png" alt="">
+                                </div>
+                                <span class="nom">Equity</span>
+                            </div>
+                            <span class="check"><i class="fas fa-circle-check"></i></span>
+                        </label>
+                        <label for="uba" class="ubame">
+                            <div class="imgNom">
+                                <div class="imgContaineur">
+                                    <img src="image/uba.png" alt="">
+                                </div>
+                                <span class="nom">Uba</span>
+                            </div>
+                            <span class="check"><i class="fas fa-circle-check"></i></span>
+                        </label>
+                        <label for="ecobank" class="ecome">
+                            <div class="imgNom">
+                                <div class="imgContaineur">
+                                    <img src="image/ecobank.png" alt="">
+                                </div>
+                                <span class="nom">Ecobank</span>
+                            </div>
+                            <span class="check"><i class="fas fa-circle-check"></i></span>
+                        </label>
+                        <label for="rawbank" class="rawme">
+                            <div class="imgNom">
+                                <div class="imgContaineur">
+                                    <img src="image/rawbank.png" alt="">
+                                </div>
+                                <span class="nom">Rawbank</span>
+                            </div>
+                            <span class="check"><i class="fas fa-circle-check"></i></span>
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn1">Suivant</button>
+                </form>
+            </div>
+            <div class="container cont1">
+                <div class="title">
+                    <h4>Selectionner un mode de <span style="color: red;">Paiement</span></h4>
+                </div>
+                <form action="">
+                    <input type="radio" name="paie" id="banque">
+                    <input type="radio" name="paie" id="mobile">
+
+                    <div class="categories">
+                        <label for="banque" class="bankme">
+                            <div class="imgNom">
+                                <div class="imgContaineur">
+                                    <i class="fa fa-bank"></i>
+                                </div>
+                                <span class="nom">Paiement Bancaire</span>
+                            </div>
+                            <span class="check"><i class="fas fa-circle-check"></i></span>
+                        </label>
+                        <label for="mobile" class="mobime">
+                            <div class="imgNom">
+                                <div class="imgContaineur">
+                                    <i class="fa fa-mobile"></i>
+                                </div>
+                                <span class="nom">Paiement Mobile</span>
+                            </div>
+                            <span class="check"><i class="fas fa-circle-check"></i></span>
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn2">Suivant</button>
+                </form>
+            </div>
+            <div class="container cont2">
+                <div class="title">
+                    <h4>Remplissez le formulaire</h4>
+                </div>
+                <div class="formCont">
+                    <form action="" class="form1">
+                        <div class="input-group">
+                            <input type="text" name="" id="" required>
+                            <label for="">nom d'utilisateur</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="" id="" title="ex: 00AA000@esisalama.org" required>
+                            <label for="">email</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" name="" id="" required>
+                            <label for="">mot de passe</label>
+                        </div>
+                        <button class="btn btn3">Terminer</button>
+                    </form>
+                    <form action="" class="form2">
+                        <div class="input-group">
+                            <input type="text" name="" id="" required>
+                            <label for="">nom d'utilisateur</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" name="" id="" required>
+                            <label for="">mot de passe</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="" id="" title="ex: 00AA000@esisalama.org" required>
+                            <label for="">email</label>
+                        </div>
+                        <button class="btn btn4">Terminer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>

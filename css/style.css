@@ -1,0 +1,181 @@
+@import url(style1.css);
+@import url(style2.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.conteneur{
+    width: 90%;
+    position: fixed;
+    height: 90%;
+}
+
+.content {
+    background: cyan;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+
+.cont0 {
+    z-index: 4;
+    position: absolute;
+}
+
+.container {
+    width: 500px;
+    height: 700px;
+    border-radius: 16px;
+    background: white;
+    position: absolute;
+    padding: 60px;
+    box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+}
+
+.cont0.mover {
+    animation: bouge 1.5s forwards ease-in-out;
+}
+
+@keyframes bouge {
+    0% {
+        transform: translateX(0px);
+    }
+    50%{
+        transform:translateX(-550px);
+    }
+    95%{
+        transform: scale(0.9);
+    }
+    100% {
+        transform: translateX(0px);
+        z-index: 1;
+    }
+}
+
+.container .title {
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont0 form input {
+    display: none;
+}
+
+.cont0 form .categorie {
+    margin-top: 15px;
+    padding-top: 25px;
+}
+
+.categorie label{
+    width: 100%;
+    height: 75px;
+    margin-bottom: 25px;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#equity:checked ~ .categorie .equme,
+#uba:checked ~ .categorie .ubame,
+#ecobank:checked ~ .categorie .ecome,
+#rawbank:checked ~ .categorie .rawme{
+    background: rgb(200, 255, 200);
+}
+
+#equity:checked ~ .categorie .equme,
+#equity:checked ~ .categorie .equme:hover,
+#uba:checked ~ .categorie .ubame,
+#uba:checked ~ .categorie .ubame:hover,
+#ecobank:checked ~ .categorie .ecome,
+#ecobank:checked ~ .categorie .ecome:hover,
+#rawbank:checked ~ .categorie .rawme,
+#rawbank:checked ~ .categorie .rawme:hover {
+    box-shadow: 0px 0px 0px 2px limegreen;
+}
+
+#equity:hover ~ .categorie .equme,
+#uba:hover ~ .categorie .ubame,
+#ecobank:hover ~ .categorie .ecome,
+#rawbank:hover ~ .categorie .rawme {
+    transition: 0.5s;
+    transform: scale(1.15);
+    box-shadow: 0 2px 7px 0px black;
+}
+
+#equity:checked ~ .categorie .equme .check,
+#uba:checked ~ .categorie .ubame .check,
+#ecobank:checked ~ .categorie .ecome .check,
+#rawbank:checked ~ .categorie .rawme .check{
+    display: block;
+}
+
+label .imgNom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgNom span{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgNom .imgContaineur {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80px;
+    height: auto;
+}
+
+.check {
+    display: none;
+}
+.check i{
+    font-size: 35px;
+    color: limegreen;
+    border-radius: 100%;
+    background: white;
+}
+
+.btn{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: darkblue;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
