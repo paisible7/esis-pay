@@ -97,23 +97,40 @@
             </div>
             <div class="container cont2">
                 <div class="title">
-                    <h4>Remplissez le formulaire</h4>
+                    <h4 id="ok">Remplissez le formulaire</h4>
                 </div>
                 <div class="formCont">
                     <form action="" class="form1">
                         <div class="input-group">
+                            <input type="text" name="paie" id="equity" required>
+                            <label for="">Nom & Post-Nom</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="numcarte" id="numcarte" maxlength="19" onkeypress="detNumBin();" required>
+                            <label for="numcarte">Numéro Bancaire</label>
+                                <span>
+                                    <img id="imgRandom" >
+                                </span>
+                        </div>
+                        <div class="fig">
+                            <div class="input-group">
+                                <input type="month" name="paie" id="ecobank" required placeholder="MM/AA">
+                                <label for=""></label>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" name="paie" id="rawbank" required>
+                                <label for="">CVC</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" id="email" required>
+                            <label for="email">Entrez votre adresse mail</label>
+                        </div>
+                        <div class="input-group">
                             <input type="text" name="" id="" required>
-                            <label for="">nom d'utilisateur</label>
+                            <label for="">montant</label>
                         </div>
-                        <div class="input-group">
-                            <input type="email" name="" id="" title="ex: 00AA000@esisalama.org" required>
-                            <label for="">email</label>
-                        </div>
-                        <div class="input-group">
-                            <input type="password" name="" id="" required>
-                            <label for="">mot de passe</label>
-                        </div>
-                        <button class="btn btn3">Terminer</button>
+                        <button type="button" class="btn btn3" onclick="cutmatr();">Suivant</button>
                     </form>
                     <form action="" class="form2">
                         <div class="input-group">
@@ -128,14 +145,14 @@
                             <input type="email" name="" id="" title="ex: 00AA000@esisalama.org" required>
                             <label for="">email</label>
                         </div>
-                        <button class="btn btn4">Terminer</button>
+                        <button class="btn btn4" >Terminer</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <script src="js/script.js"></script>
-    <script src="js/script1.js"></script>
+    <script src="js/carte.js"></script>
 </body>
 
 </html>

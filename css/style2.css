@@ -1,5 +1,7 @@
 .cont2 {
-    z-index: 0;
+    z-index: 1;
+    position: absolute;
+    transform: translateX(550px);
 }
 
 .cont2.deplacer{
@@ -18,7 +20,7 @@
     }
     100% {
         transform: translateX(0px);
-        z-index: 3;
+        z-index: 2;
     }
 }
 
@@ -45,51 +47,72 @@
 .formCont form {
     width: 100%;
     height: 100%;
+    margin-top: 10px;
+    padding-top: 20px;
     position: absolute;
-    justify-content: center;
-    align-items: center;
 }
 
-.form1 .input-group {
+/* POUR LE FORMULAIRE BANCAIRE */
+
+.input-group {
     position: relative;
     width: 100%;
-    margin: 30px 0;
+    display: flex;
+    margin: 15px 0;
+    padding: 10px 0;
+  }
+
+.input-group input {
+
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    padding:0px 10px ;
+    font-weight: 600;
+    border: none;
+    border-bottom: .1px solid rgba(128, 128, 128, 0.507);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.form1 .input-group label {
+.input-group label{
     position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    font-size: 16px;
-    color: #333;
-    padding: 0 5px;
     pointer-events: none;
     transition: .5s;
 }
 
-.form1 .input-group input {
-    width: 100%;
-    height: 50px;
-    font-size: 16px;
-    color: #333;
-    padding: 0 10px;
-    background: transparent;
-    border: 1px solid #333;
-    outline: none;
-    border-radius: 5px;
-}
 
-.form1 .input-group input:focus~label,
-.form1 .input-group input:valid~label {
+.input-group input:focus~label,
+.input-group input:valid~label{
     top: 0;
     font-size: 12px;
-    background: white;
 }
 
-button.btn3 {
-    top: 200px;
+.fig {
+    display: flex;
 }
+
+.fig .input-group{
+    margin: 0;
+}
+
+.fig .input-group input{
+    width: 80%;
+}
+.fig .input-group label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+}
+
+button.btn3{
+    top: 40px;
+}
+
+/* ############################# */
+
 
 .form2 .input-group {
     position: relative;
@@ -129,5 +152,5 @@ button.btn3 {
 }
 
 button.btn4 {
-    top: 200px;
+    top: 40px;
 }
